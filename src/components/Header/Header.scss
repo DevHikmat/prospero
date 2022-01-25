@@ -1,0 +1,144 @@
+@import url("../../App.css");
+
+.Header {
+  background-color: var(--white);
+  .search-container {
+    .flex-container {
+      border-bottom: 1px solid var(--grey-15);
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      .sections {
+        padding: 12px 30px 12px 0;
+        border-right: 1px solid var(--grey-15);
+        button {
+          padding-left: 0;
+          background-color: #fff;
+          border: none;
+          img {
+            display: inline-block;
+            margin-right: 16px;
+          }
+          span {
+            font-weight: 500;
+            font-size: var(--fs-14);
+            font-family: var(--lato);
+          }
+        }
+      }
+      .search-bar {
+        flex-grow: 7;
+        form {
+          position: relative;
+          img {
+            position: absolute;
+            top: 10px;
+            left: 30px;
+            display: block;
+          }
+          input {
+            border-radius: 0;
+            padding-left: 60px;
+            font-size: 14px;
+            border: none;
+            &:focus{
+                box-shadow: none;
+            }
+          }
+        }
+      }
+      .subscribe-now {
+        display: flex;
+        position: relative;
+        padding: 0 50px 0 70px;
+        align-items: center;
+        img {
+          position: absolute;
+          bottom: -3px;
+          left: 0;
+          border-top: 3px solid var(--grey-30);
+          border-left: 3px solid var(--grey-30);
+          border-right: 3px solid var(--grey-30);
+          width: 60.07px;
+          height: 41px;
+        }
+        .subscribe-text {
+          text-decoration: none;
+          h6 {
+            color: var(--grey-100);
+            line-height: 10px;
+            font-size: var(--fs-12);
+            font-weight: bold;
+            margin-top: 10px;
+          }
+          small {
+            color: var(--grey-50);
+            font-size: var(--fs-12);
+          }
+        }
+      }
+      .sign-in {
+        a {
+            display: block;
+            text-decoration: none;
+            color: var(--grey-85);
+          img {
+            display: inline-block;
+            margin-right: 16px;
+          }
+          p {
+              display: inline-block;
+              font-size: var(--fs-14);
+          }
+        }
+      }
+    }
+  }
+
+  .logo-container{
+    .logo-section{
+      padding-left: 30px;
+      img{
+        display: inline-block;
+        margin-right: 15px;
+      }
+      span{
+        font-size: 14px;
+        color: var(--grey-85);
+      }
+    }
+    .universal{
+      text-align: center;
+      color: var(--grey-100);
+      font-family: var(--roboto);
+      h1{
+        line-height: 75px;
+      }
+    }
+    .data-section{
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      .for-data{
+        font-size: var(--fs-14);
+        padding: 30px 50px;
+        display: block;
+        color: var(--grey-85);
+      }
+      .weather{
+        display: flex;
+        justify-content: flex-start;
+        img{
+          margin-right: 13px;
+          width: 18px;
+          height: 18px;
+        }
+        span{
+          font-size: var(--fs-14);
+          color: var(--grey-85);
+        }
+      }
+    }
+  }
+}

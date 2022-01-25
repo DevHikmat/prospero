@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;500;600;700&display=swap');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: var(--white-1);
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    margin-bottom: 0;
+}
+
+
+/* ========== MAIN STYLES =========== */
+
+:root {
+    /* ========== MAIN COLORS ============ */
+    --grey-05: #F5F5F5;
+    --grey-15: #D9DADB;
+    --grey-30: #BCBFC2;
+    --grey-50: #939699;
+    --grey-85: #4B5157;
+    --grey-95: #30363D;
+    --grey-100: #262D33;
+    --grey-blue-25: #D1E2EB;
+    --grey-blue-50: #B4D1E0;
+    --grey-blue-75: #6E99AE;
+    --grey-blue-100: #55839E;
+    --red: #EB5757;
+    --red-75: #FF4F52;
+    --blue-25: #C5E4FC;
+    --blue-75: #4592FF;
+    --blue-green-75: #3BBDC4;
+    --purple-25: #E7D9FF;
+    --purple-75: #AC8EE3;
+    --orange-75: #FFA34D;
+    --green-75: #3DC47E;
+    --white: #FFFFFF;
+    --white-1: #E5E5E5;
+    /* Socials colors */
+    --facebook: #4267B2;
+    --twitter: #1DA1F2;
+    --youtube: #FF0000;
+    --instagram: #262626;
+    /* ========== OPACITIES ============ */
+    --opacity-1: 0.4;
+    --opacity-2: 0.08;
+    /* ========== BORDER RADIUSES ========= */
+    --radius-5: 5px;
+    --radius-10: 10px;
+    --radius-20: 20px;
+
+    /* ========== FONTS =============== */
+    /* Font families */
+    --lato: 'Lato', sans-serif;
+    --roboto: 'Roboto Slab', sans-serif;
+    /* Font sizes */
+    --fs-12: 12px;
+    --fs-14: 14px;
+    --fs-16: 16px;
+    --fs-20: 20px;
+    --fs-25: 25px;
+    --fs-40: 40px;
+    /* ============ LINE HEIGHTS =========== */
+    --lh-15: 15px;
+    --lh-20: 20px;
+    --lh-25: 25px;
+    --lh-30: 30px;
+    --lh-50: 50px;
+}
+
+
+/* ============= MAIN CLASSES =============== */
+
+.blueBtn{
+    background-color: var(--blue-75);
+    color: var(--white);
+    border-radius: var(--radius-20);
+    padding: 8px 25px;
+    font-size: var(--fs-14);
+    height: 40px;
+}
+
+.blueBtn img{
+    margin-left: 8px;
+}
+
+.blueBtn:hover{
+    color: white;
+}

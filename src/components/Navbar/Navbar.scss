@@ -1,0 +1,194 @@
+@import url("../../App.css");
+
+.my-menu {
+  background-color: var(--grey-100);
+  height: 520px;
+  .menu-item {
+    width: 100%;
+    .collapse {
+      ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        li {
+          a {
+            color: var(--white);
+            text-transform: uppercase;
+            font-size: var(--fs-14);
+            font-weight: 500;
+            letter-spacing: 0.5px;
+          }
+        }
+      }
+    }
+  }
+
+  .navbar-down {
+    background-color: var(--grey-95);
+    border-radius: var(--radius-10);
+    padding: 30px;
+    .navbar-down-item {
+      display: flex;
+      border-right: 1px solid var(--grey-85);
+      padding-right: 25px;
+      .down-text {
+        color: var(--white);
+        font-family: var(--roboto);
+        font-size: 16px;
+        display: inline-block;
+        margin-right: 18px;
+      }
+      img {
+        display: inline-block;
+        width: 65px;
+        height: 65px;
+        object-fit: cover;
+      }
+    }
+  }
+
+  .top-img-content {
+    padding-top: 30px;
+    .top-img-item {
+      padding: 0px 12px;
+      .left-side {
+        border-top-left-radius: 10px;
+        border-bottom-left-radius: 10px;
+        padding: 60px;
+        background-image: url("../../assets/images/Rectangle.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        span {
+          display: flex;
+          img {
+            display: inline-block;
+            margin-right: 10px;
+          }
+          h6 {
+            display: inline-block;
+            font-size: 14px;
+            font-family: var(--lato);
+            color: var(--white-1);
+          }
+          small {
+            display: block;
+            color: var(--grey-30);
+            font-size: var(--fs-12);
+          }
+        }
+        p {
+          font-family: Lato;
+          font-size: 12px;
+          color: var(--blue-75);
+          letter-spacing: 0.5px;
+          margin-top: 142px;
+          margin-bottom: 20px;
+        }
+        h1 {
+          color: var(--white);
+          width: 600px;
+          font-family: var(--roboto);
+          margin-bottom: 40px;
+        }
+        .top-img-buttons {
+          display: flex;
+          align-items: center;
+          padding-bottom: 7px;
+          .play {
+            padding-left: 30px;
+            display: flex;
+            .circle {
+              width: 50px;
+              height: 50px;
+              border: 2.5px solid var(--grey-50);
+              border-radius: 50%;
+              text-align: center;
+              line-height: 40px;
+              margin-right: 10px;
+              img {
+                height: 12px;
+                width: 12px;
+              }
+            }
+            .play-text {
+              p {
+                margin-top: 0;
+                margin-bottom: 0;
+                color: var(--white);
+                opacity: 0.85;
+                font-size: 14px;
+                font-family: var(--lato);
+              }
+              small {
+                color: var(--white);
+                opacity: var(--opacity-1);
+                font-size: 12px;
+                font-family: var(--lato);
+              }
+            }
+          }
+        }
+      }
+
+      .right-side {
+        border-top-right-radius: 10px;
+        border-bottom-right-radius: 10px;
+        background-color: var(--white);
+        .right-heading {
+          padding: 18px 0 18px 30px;
+          border-bottom: 1px solid var(--grey-15);
+          h6 {
+            color: var(--grey-100);
+            font-size: 14px;
+          }
+        }
+        .right-item {
+          padding: 15px 45px 15px 30px;
+          position: relative;
+          border-bottom: 1px solid var(--grey-15);
+          background-color: white;
+          transition: all 0.3s ease;
+          &::before {
+            content: "\A";
+            border-style: solid;
+            border-width: 10px 15px 10px 0;
+            border-color: transparent var(--grey-05) transparent transparent;
+            position: absolute;
+            top: 35px;
+            left: -15px;
+            display: none;
+            transition: all 0.3s ease;
+          }
+          &:hover::before {
+            display: block;
+          }
+          &:hover {
+            background-color: var(--grey-05);
+            cursor: pointer;
+          }
+          span {
+            font-size: 12px;
+            letter-spacing: 0.5px;
+            font-family: var(--lato);
+          }
+          p {
+            font-size: 14px;
+            color: var(--grey-85);
+            font-family: var(--lato);
+            position: relative;
+            span {
+              width: 20px;
+              height: 20px;
+              border: 1.5px solid var(--grey-30);
+              border-radius: 50%;
+              text-align: center;
+              position: absolute;
+              bottom: 0;
+              right: 58px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

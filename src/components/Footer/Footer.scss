@@ -1,0 +1,119 @@
+@import url("../../App.css");
+
+.Footer {
+  background-color: white;
+  .footer-menu {
+    border-bottom: 1px solid var(--grey-15);
+    padding-bottom: 40px;
+    .footer-item {
+      font-family: var(--lato);
+      .footer-color {
+        height: 5px;
+        background-color: var(--red-75);
+        margin-bottom: 25px;
+      }
+      h6 {
+        font-size: 14px;
+        line-height: 20px;
+        color: var(--grey-100);
+        font-weight: bold;
+        margin-bottom: 20px;
+      }
+      ul {
+        li {
+          padding: 5px 0;
+          a {
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 20px;
+            color: var(--grey-85);
+            text-decoration: none;
+            transition: all .3s ease;
+            &:hover{
+              color: var(--blue-75);
+            }
+          }
+        }
+      }
+    }
+  }
+  .footer-socials {
+    padding: 25px 0;
+    border-bottom: 1px solid var(--grey-15);
+    ul {
+      li {
+        line-height: 50px;
+        padding: 0 20px;
+        a {
+          text-decoration: none;
+          font-size: 14px;
+          line-height: 20px;
+          letter-spacing: 0.5px;
+          text-transform: uppercase;
+          color: var(--grey-100);
+          font-weight: bold;
+        }
+      }
+      .logo {
+        padding: 0;
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-color: var(--blue-75);
+      }
+    }
+    .socials-menu {
+      li {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        padding-right: 20px;
+        margin-left: 15px;
+        position: relative;
+        background-color: var(--facebook);
+        &:nth-child(2) {
+          background-color: var(--twitter);
+        }
+        &:nth-child(3) {
+          background-color: var(--youtube);
+        }
+        &:nth-child(4) {
+          background-color: var(--instagram);
+        }
+        a {
+          line-height: 40px;
+          img {
+            margin-right: 20px;
+            display: block;
+            position: absolute;
+            top: 12px;
+            left: 12px;
+          }
+        }
+      }
+    }
+  }
+  .footer-down {
+    padding: 50px 0;
+    p {
+      font-family: var(--lato);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--grey-50);
+      padding-right: 250px;
+    }
+    span {
+      font-family: var(--lato);
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 20px;
+      color: var(--grey-50);
+      display: block;
+      width: 250px;
+    }
+  }
+}
